@@ -33,12 +33,13 @@
         android:id="@+id/email_input"
         android:layout_width="312dp"
         android:layout_height="51dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="84dp"
         android:background="@drawable/rounded_corner"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:text="   Email"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
@@ -59,10 +60,11 @@
         android:id="@+id/signin_button"
         android:layout_width="286dp"
         android:layout_height="48dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="52dp"
         android:backgroundTint="@color/black"
         android:text="Sign In"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
