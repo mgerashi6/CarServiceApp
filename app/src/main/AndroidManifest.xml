@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CarServiceApp">
-        <activity android:name=".customerProfile"></activity>
+        <activity android:name=".customerAllVehicles"></activity>
+        <activity android:name=".customerProfile" />
         <activity android:name=".customerContactUs" />
         <activity android:name=".customerAppointmentsBooked" />
         <activity android:name=".customerBookAppointment" />
