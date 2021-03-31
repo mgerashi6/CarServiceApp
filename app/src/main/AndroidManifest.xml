@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CarServiceApp">
-        <activity android:name=".customerAllVehicles"></activity>
+        <activity android:name=".customerTrackCarSelected"></activity>
+        <activity android:name=".customerTrackCar" />
+        <activity android:name=".customerCarReportSelected" />
+        <activity android:name=".customerCarReport" />
+        <activity android:name=".customerAllVehicles" />
         <activity android:name=".customerProfile" />
         <activity android:name=".customerContactUs" />
         <activity android:name=".customerAppointmentsBooked" />
