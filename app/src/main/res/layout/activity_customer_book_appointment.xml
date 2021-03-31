@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_color"
+    tools:context=".customerBookAppointment">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="280dp"
+        android:layout_height="244dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="373dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="190dp"
+        android:text="Appointment Booking"
+        android:textColor="@color/black"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner"
+        android:ems="10"
+        android:inputType="date"
+        android:text="     Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/rounded_corner"
+        android:ems="10"
+        android:inputType="time"
+        android:text="     Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <EditText
+        android:id="@+id/car_plate_number"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/rounded_corner"
+        android:ems="10"
+        android:inputType="number"
+        android:text="       Car Plate Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    <EditText
+        android:id="@+id/reason_for_service"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/rounded_corner"
+        android:ems="10"
+        android:inputType="text"
+        android:text="      Reason for Service"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_plate_number" />
+
+    <Button
+        android:id="@+id/book_appointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/black"
+        android:text="Book Appointment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reason_for_service" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
