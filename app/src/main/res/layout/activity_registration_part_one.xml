@@ -160,38 +160,50 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/email" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="116dp"
-                android:text="I agree to the Legal Terms "
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/password" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="I agree to the Legal Terms "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
 
-            <RadioButton
-                android:id="@+id/checkLegal"
-                android:layout_width="30dp"
-                android:layout_height="35dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="8dp"
-                android:background="@color/white"
-                app:layout_constraintEnd_toStartOf="@+id/textView"
-                app:layout_constraintHorizontal_bias="0.887"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/password" />
+        <CheckBox
+            android:id="@+id/checkLegal"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.217"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="185dp"
-                android:layout_height="44dp"
-                android:layout_marginTop="23dp"
-                android:backgroundTint="@color/black"
-                android:text="Register"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="185dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="23dp"
+            android:backgroundTint="@color/black"
+            android:text="Register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="77dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/black"
+            android:text="BACK"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

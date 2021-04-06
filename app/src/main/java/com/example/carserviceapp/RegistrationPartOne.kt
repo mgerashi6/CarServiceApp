@@ -1,5 +1,6 @@
 package com.example.carserviceapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -7,6 +8,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_registration_part_one.*
 
 
@@ -39,13 +41,13 @@ class RegistrationPartOne : AppCompatActivity() {
 
             override fun onItemSelected(parent: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
 
-                if(genderSelect.selectedItemPosition ==1){
+                if(genderSelect.selectedItemPosition ==0){
                     condition1()
                 }
-                if(genderSelect.selectedItemPosition==2){
+                if(genderSelect.selectedItemPosition== 1){
                     selectedGender = "Male"
                 }
-                if(genderSelect.selectedItemPosition==3){
+                if(genderSelect.selectedItemPosition== 2){
                     selectedGender = "Female"
                 }
             }
@@ -63,10 +65,10 @@ class RegistrationPartOne : AppCompatActivity() {
 
             override fun onItemSelected(parent: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
 
-                if(countrySelect.selectedItemPosition == 1){
+                if(countrySelect.selectedItemPosition == 0){
                     condition1()
                 }
-                if(countrySelect.selectedItemPosition==2){
+                if(countrySelect.selectedItemPosition== 1){
                     selectedCountry = "Qatar"
                 }
             }
@@ -85,10 +87,10 @@ class RegistrationPartOne : AppCompatActivity() {
 
             override fun onItemSelected(parent: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
 
-                if(citySelect.selectedItemPosition ==1){
+                if(citySelect.selectedItemPosition == 0){
                     condition1()
                 }
-                if(citySelect.selectedItemPosition==2){
+                if(citySelect.selectedItemPosition== 1){
                     selectedCity = "Doha"
                 }
             }
@@ -97,7 +99,13 @@ class RegistrationPartOne : AppCompatActivity() {
 
         button.setOnClickListener{
             val checkedButton = checkLegal.isChecked
-            val firstName = findViewById<EditText>(R.id.first_name)
+            if(checkedButton){Toast.makeText(this,"Yes SIRRRRR", Toast.LENGTH_LONG).show()}
+            //val firstName = findViewById<EditText>(R.id.first_name)
+
+                val intent = Intent(this, RegistrationPartTwo::class.java)
+                startActivity(intent)
+
+
         }
     }
     private fun condition1(){
