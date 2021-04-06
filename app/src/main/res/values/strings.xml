@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CarServiceApp</string>
+    <string name="car_service_center">Car Service Center</string>
+    <string name="welcome_to_csc">Welcome to CSC</string>
 </resources>
