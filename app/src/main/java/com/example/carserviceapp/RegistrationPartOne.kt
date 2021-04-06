@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.activity_registration_part_one.*
 val dropDownListGender = arrayOf("Gender", "Male","Female")
 val dropDownListCountry = arrayOf("Country", "Qatar")
 val dropDownListCity = arrayOf("City", "Doha")
-var selectedGender = ""
+var selectedGenderr = ""
 var selectedCountry = ""
 var selectedCity = ""
 
@@ -45,10 +45,10 @@ class RegistrationPartOne : AppCompatActivity() {
                     condition1()
                 }
                 if(genderSelect.selectedItemPosition== 1){
-                    selectedGender = "Male"
+                    selectedGenderr = "Male"
                 }
                 if(genderSelect.selectedItemPosition== 2){
-                    selectedGender = "Female"
+                    selectedGenderr = "Female"
                 }
             }
         }
