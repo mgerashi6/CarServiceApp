@@ -3,6 +3,7 @@ package com.example.carserviceapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -21,6 +22,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+// How to encrypt and decrypt //
+//        var pass = "Qatar123333333"
+//        var newnc = AESEncryption.encrypt(pass)
+//        var newncc = AESEncryption.decrypt(newnc.toString())
+//
+//        Log.d("encrypt", newnc.toString())
+//        Log.d("decrypt", newncc.toString() )
+
+        // -----------------------------------------
 //        val CustomerhomeFragment = CustomerHomeFragment()
 //        val CustomerProfileFragment = CustomerProfileFragment()
 //        val CustomerCallFragment = CustomerCallFragment()
@@ -35,6 +46,18 @@ class MainActivity : AppCompatActivity() {
 //            }
 //            true
 //        }
+
+        //Database Stuff
+        var helper = DBHelper(applicationContext)
+        var db = helper.readableDatabase
+        var rs = db.rawQuery("SELECT * FROM ADMIN",null)
+
+        if(rs.moveToNext()){
+            Toast.makeText(applicationContext,rs.getString(1),Toast.LENGTH_LONG).show()
+        }
+        else{
+            Toast.makeText(applicationContext,"Nope",Toast.LENGTH_LONG).show()
+        }
 
 
 

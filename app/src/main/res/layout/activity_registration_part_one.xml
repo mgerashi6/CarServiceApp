@@ -32,7 +32,7 @@
                 android:background="@drawable/rounded_corner"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="First Name"
+                android:hint="First Name"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
                 android:background="@drawable/rounded_corner"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Last Name"
+                android:hint="Last Name"
                 android:textAlignment="center"
 
                 app:layout_constraintEnd_toEndOf="parent"
@@ -97,40 +97,55 @@
                 android:background="@drawable/rounded_corner"
                 android:ems="10"
                 android:inputType="phone"
-                android:text="Mobile Phone"
+                android:hint="Mobile Phone"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.494"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/citySelect" />
 
-            <EditText
-                android:id="@+id/nationalID"
-                android:layout_width="312dp"
-                android:layout_height="51dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/rounded_corner"
-                android:ems="10"
-                android:inputType="number"
-                android:text="National ID"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.494"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/phone" />
+        <EditText
+            android:id="@+id/nationalID"
+            android:layout_width="312dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="National ID"
+            android:inputType="number"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone" />
 
 
-            <View
-                android:id="@+id/view"
-                android:layout_width="312dp"
-                android:layout_height="1dp"
-                android:layout_marginTop="20dp"
-                android:background="@color/black"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nationalID" />
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="312dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="Date of Birth"
+            android:inputType="date"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nationalID" />
 
-            <EditText
+        <View
+            android:id="@+id/view"
+            android:layout_width="312dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+        <EditText
                 android:id="@+id/email"
                 android:layout_width="312dp"
                 android:layout_height="51dp"
@@ -138,7 +153,7 @@
                 android:background="@drawable/rounded_corner"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:text="Email"
+                android:hint="Email"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.494"
@@ -153,7 +168,7 @@
                 android:background="@drawable/rounded_corner"
                 android:ems="10"
                 android:inputType="textPassword"
-                android:text="Email"
+                android:hint="Password"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.494"

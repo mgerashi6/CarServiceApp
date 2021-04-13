@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradiant_color"
+    android:background="@drawable/gradiant_color">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
     tools:context=".loginPage">
 
     <ImageView
@@ -37,21 +41,23 @@
         android:background="@drawable/rounded_corner"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="   Email"
+        android:hint="Email"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/pass_input"
         android:layout_width="312dp"
         android:layout_height="51dp"
         android:layout_marginTop="38dp"
         android:background="@drawable/rounded_corner"
         android:ems="10"
         android:inputType="textPassword"
-        android:text=" Password"
+        android:hint="Password"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_input" />
@@ -66,7 +72,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/pass_input" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+    </ScrollView>
