@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_color"
+    tools:context=".cs_car_reports">
+
+    <TextView
+        android:id="@+id/CRBrand3"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Brand:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
+
+    <View
+        android:id="@+id/CRRectangle3"
+        android:layout_width="299dp"
+        android:layout_height="153dp"
+        android:background="@drawable/rectangle"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="454dp" />
+
+    <TextView
+        android:id="@+id/CRRegNumber3"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Registration Number:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <TextView
+        android:id="@+id/CRModel3"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Model:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <Button
+        android:id="@+id/CRCheckReport3"
+        android:layout_width="187dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="176dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/black"
+        android:text="Check Report"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CPSinputText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/CRRemoveCar3"
+        android:layout_width="187dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/black"
+        android:text="Remove Car"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CPSinputText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/CRPlateNumber3"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Plate Number:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <TextView
+        android:id="@+id/CRYear3"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Year:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/CRModel2"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Model:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <TextView
+        android:id="@+id/CRBrand2"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Brand:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <TextView
+        android:id="@+id/CRRegNumber2"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Registration Number:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <TextView
+        android:id="@+id/CRYear2"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Year:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <View
+        android:id="@+id/CRRectangle2"
+        android:layout_width="299dp"
+        android:layout_height="153dp"
+        android:background="@drawable/rectangle"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <Button
+        android:id="@+id/CRRemoveCar2"
+        android:layout_width="187dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="304dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/black"
+        android:text="Remove Car"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CPSinputText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/CRPlateNumber2"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Plate Number:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <Button
+        android:id="@+id/CRCheckReport2"
+        android:layout_width="187dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="340dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/black"
+        android:text="Check Report"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CPSinputText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/CRYear1"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Year:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <TextView
+        android:id="@+id/CRRegNumber1"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Registration Number:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <TextView
+        android:id="@+id/CRPlateNumber1"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Plate Number:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <TextView
+        android:id="@+id/CRBrand1"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Brand:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/CRModel1"
+        android:layout_width="315dp"
+        android:layout_height="11dp"
+        android:text="Car Model:"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <TextView
+        android:id="@+id/CRTitle"
+        android:layout_width="326dp"
+        android:layout_height="52dp"
+        android:text="All Vehicles"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/CROwner"
+        android:layout_width="326dp"
+        android:layout_height="22dp"
+        android:text="Owner:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <View
+        android:id="@+id/CRRectangle1"
+        android:layout_width="299dp"
+        android:layout_height="153dp"
+        android:background="@drawable/rectangle"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/CRCheckReport1"
+        android:layout_width="187dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="504dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/black"
+        android:text="Check Report"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CPSinputText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/CRRemoveCar1"
+        android:layout_width="187dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="468dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/black"
+        android:text="Remove Car"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CPSinputText"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
