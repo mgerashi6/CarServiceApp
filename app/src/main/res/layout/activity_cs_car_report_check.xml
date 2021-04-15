@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_color"
+    tools:context=".cs_car_report_check">
+
+    <Button
+        android:id="@+id/CRCPrintButton"
+        android:layout_width="243dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/black"
+        android:text="Print Digital Receipt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CSRtext"
+        app:layout_constraintVertical_bias="0.152" />
+
+    <Button
+        android:id="@+id/CRCSendReceiptButton"
+        android:layout_width="243dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/black"
+        android:text="Send Digital Receipt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CSRtext"
+        app:layout_constraintVertical_bias="0.152" />
+
+    <TextView
+        android:id="@+id/CRCTitle"
+        android:layout_width="326dp"
+        android:layout_height="52dp"
+        android:text="Car Report"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/CRCDateServiced"
+        android:layout_width="325dp"
+        android:layout_height="26dp"
+        android:text="Date Serviced: _____________"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <TextView
+        android:id="@+id/CRCStatus"
+        android:layout_width="325dp"
+        android:layout_height="26dp"
+        android:text="Status: _____________"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221" />
+
+    <TextView
+        android:id="@+id/CRCProblems"
+        android:layout_width="325dp"
+        android:layout_height="26dp"
+        android:text="Problems: _____________"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649" />
+
+    <TextView
+        android:id="@+id/CRCComments"
+        android:layout_width="325dp"
+        android:layout_height="26dp"
+        android:text="Additional Comments: _____________"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
