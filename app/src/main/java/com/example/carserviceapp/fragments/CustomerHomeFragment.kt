@@ -6,8 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.carserviceapp.R
-import com.example.carserviceapp.customerBookAppointment
+import com.example.carserviceapp.*
 import kotlinx.android.synthetic.main.fragment_customer_home.*
 
 //// TODO: Rename parameter arguments, choose names that match
@@ -35,6 +34,33 @@ class CustomerHomeFragment : Fragment() {
             val intent = Intent(activity, customerBookAppointment::class.java)
             startActivity(intent)
         }
+
+
+        appointments_booked.setOnClickListener {
+            val intent = Intent(activity, customerAppointmentsBooked::class.java)
+            startActivity(intent)
+        }
+
+        track_car.setOnClickListener {
+            val intent = Intent(activity, customerTrackCar::class.java)
+            startActivity(intent)
+        }
+
+        check_car_reports.setOnClickListener {
+            val intent = Intent(activity, customerCarReport::class.java)
+            startActivity(intent)
+        }
+
+
+        all_vehicles.setOnClickListener {
+            val intent = Intent(activity, customerAllVehicles::class.java)
+            startActivity(intent)
+        }
+
+
+
+
+
     }
 
     override fun onCreateView(
@@ -45,11 +71,6 @@ class CustomerHomeFragment : Fragment() {
 
 
         val v = inflater.inflate(R.layout.fragment_customer_home, container, false)
-
-
-
-
-
 
         return v
 

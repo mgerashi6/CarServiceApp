@@ -21,7 +21,7 @@ class RegisterDB {
 
         var cv = ContentValues()
         cv.put("FIRST_NAME", firstName.toString())
-        cv.put("FAMILY_NAME", firstName.toString())
+        cv.put("FAMILY_NAME", lastName.toString())
         cv.put("GENDER", selectedGender)
         cv.put("REGION", selectedCountry )
         cv.put("CITY", selectedCity )
