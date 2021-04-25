@@ -2,4 +2,6 @@
     <string name="app_name">CarServiceApp</string>
     <string name="car_service_center">Car Service Center</string>
     <string name="welcome_to_csc">Welcome to CSC</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

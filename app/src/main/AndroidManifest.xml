@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CarServiceApp">
-
-        <activity android:name=".customerTrackCarSelected"></activity>
+        <activity android:name=".admin_login"></activity>
+        <activity android:name=".Today_AppointmentsActivity" />
+        <activity android:name=".UpdateCarReportActivity" />
+        <activity android:name=".AddCarReportActivity" />
+        <activity android:name=".customerTrackCarSelected" />
         <activity android:name=".customerTrackCar" />
         <activity android:name=".customerCarReportSelected" />
         <activity android:name=".customerCarReport" />
@@ -20,12 +23,11 @@
         <activity android:name=".customerAppointmentsBooked" />
         <activity android:name=".customerBookAppointment" />
         <activity android:name=".customerHomePage" />
-        <activity android:name=".RegistrationPartThree"></activity>
+        <activity android:name=".RegistrationPartThree" />
         <activity android:name=".RegistrationPartTwo" />
         <activity android:name=".RegistrationPartOne" />
         <activity android:name=".loginPage" />
         <activity android:name=".MainActivity">
-       
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
