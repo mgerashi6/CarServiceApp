@@ -57,12 +57,6 @@ class CustomerHomeFragment : Fragment() {
             startActivity(intent)
         }
 
-
-
-
-
-
-
     }
 
     override fun onCreateView(
