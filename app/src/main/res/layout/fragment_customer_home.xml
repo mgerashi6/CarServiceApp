@@ -37,11 +37,10 @@
             android:id="@+id/book_appointment"
             android:layout_width="225dp"
             android:layout_height="49dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="98dp"
             android:backgroundTint="@color/black"
             android:text="Book Appointment"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title" />
 
@@ -65,7 +64,7 @@
             android:backgroundTint="@color/black"
             android:text="Check Car Reports"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintHorizontal_bias="0.505"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/track_car" />
 
