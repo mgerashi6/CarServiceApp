@@ -16,8 +16,6 @@ val dropDownListGender = arrayOf("Gender", "Male","Female")
 val dropDownListCountry = arrayOf("Country", "Qatar")
 val dropDownListCity = arrayOf("City", "Doha")
 
-
-
 class RegistrationPartOne : AppCompatActivity() {
 
 
