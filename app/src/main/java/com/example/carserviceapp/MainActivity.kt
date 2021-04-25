@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(applicationContext,rs.getString(1),Toast.LENGTH_LONG).show()
         }
         else{
-            Toast.makeText(applicationContext,"Nope",Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext,"",Toast.LENGTH_LONG).show()
         }
 
 
