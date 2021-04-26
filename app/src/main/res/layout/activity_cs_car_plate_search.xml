@@ -41,7 +41,7 @@
         android:id="@+id/CPStext"
         android:layout_width="324dp"
         android:layout_height="58dp"
-        android:text="Enter National ID No."
+        android:text="Enter Car Plate Number"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="26dp"
@@ -54,12 +54,13 @@
         app:layout_constraintVertical_bias="0.295" />
 
     <EditText
-        android:id="@+id/CPSinputText"
+        android:id="@+id/plate_number"
         android:layout_width="319dp"
         android:layout_height="55dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="National ID"
+        android:hint="Car Plate Number"
+        android:textAlignment="center"
         android:textColor="#808080"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/white"
