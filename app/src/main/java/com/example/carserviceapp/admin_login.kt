@@ -45,10 +45,10 @@ class admin_login : AppCompatActivity() {
 
                     var decryptedPass = AESEncryption.decrypt(adminPass)
                     if(adminPass.isNotEmpty() && passGet == decryptedPass){
-//                        if(adminType == "Mechanic"){
-//                            val intent = Intent(this, ENTERMECHANICPAGENAME::class.java)
-//                            startActivity(intent)
-//                        }
+                        if(adminType == "Mechanic"){
+                            val intent = Intent(this, MechanicHomePage::class.java)
+                           startActivity(intent)
+                        }
                          if(adminType == "CSRep"){
                             val intent = Intent(this, cs_home_page::class.java)
                             startActivity(intent)
