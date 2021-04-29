@@ -19,5 +19,6 @@ class cs_home_page : AppCompatActivity() {
             val intent = Intent(this, Today_AppointmentsActivity::class.java)
             startActivity(intent)
         }
+        // some code to allow push
     }
 }
