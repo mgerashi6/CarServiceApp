@@ -57,13 +57,27 @@
         android:layout_marginBottom="200dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/black"
-        android:text="Search with QID"
+        android:text="Car Report Check"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/HPTitle2"
         app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/HPTodaysAppointment"
+        android:layout_width="248dp"
+        android:layout_height="56dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/black"
+        android:text="Today's Appointment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

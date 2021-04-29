@@ -11,7 +11,12 @@ class cs_home_page : AppCompatActivity() {
         setContentView(R.layout.activity_cs_home_page)
 
         HPSearch.setOnClickListener {
-            val intent = Intent(this, UpdateCarReportActivity::class.java)
+            val intent = Intent(this, cs_car_plate_search::class.java)
+            startActivity(intent)
+        }
+
+        HPTodaysAppointment.setOnClickListener {
+            val intent = Intent(this, Today_AppointmentsActivity::class.java)
             startActivity(intent)
         }
     }
