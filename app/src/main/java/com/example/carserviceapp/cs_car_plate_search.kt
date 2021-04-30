@@ -28,7 +28,7 @@ class cs_car_plate_search : AppCompatActivity() {
         CPSbutton.setOnClickListener {
 
             val intent = Intent(this, cs_car_report_check::class.java)
-            intent.putExtra("carplatenumber",plate_number.text.toString())
+            intent.putExtra("carplatenumber",plate_number1.text.toString())
             startActivity(intent)
         }
 
