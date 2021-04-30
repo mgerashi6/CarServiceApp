@@ -32,7 +32,7 @@ class admin_login : AppCompatActivity() {
 
                     var helper = DBHelper(applicationContext)
                     var db = helper.readableDatabase
-                    var rs = db.rawQuery("SELECT ADMIN_ID, EMAIL, PASSWORD, ADMIN_TYPE FROM CUSTOMER WHERE EMAIL = '$emailInput'", null)
+                    var rs = db.rawQuery("SELECT ADMIN_ID, EMAIL, PASSWORD, ADMIN_TYPE FROM ADMIN WHERE EMAIL = '$emailInput'", null)
                     //Log.d("check", rs.getString(0))
                     if(rs.moveToNext()){
                         adminID = rs.getString(0)
