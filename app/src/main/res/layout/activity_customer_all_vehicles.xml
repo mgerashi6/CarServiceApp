@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradiant_color"
     tools:context=".customerAllVehicles">
-
     <TextView
         android:id="@+id/title"
         android:layout_width="300dp"
@@ -20,100 +19,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/vehicle_box"
-        android:layout_width="373dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/rounded_corner"
-        android:text=""
-        android:textColor="@color/black"
-        android:textSize="38dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/title" />
-
-    <TextView
-        android:id="@+id/registration_number"
-        android:layout_width="373dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/rounded_corner"
-        android:text="Registration Number:"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/vehicle_box" />
-
-    <TextView
-        android:id="@+id/brand"
-        android:layout_width="373dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="64dp"
-        android:background="@drawable/rounded_corner"
-        android:text="Brand:"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/registration_number" />
-
-    <TextView
-        android:id="@+id/model"
-        android:layout_width="373dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="52dp"
-        android:background="@drawable/rounded_corner"
-        android:text="Model:"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/brand" />
-
-    <TextView
-        android:id="@+id/year"
-        android:layout_width="373dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="64dp"
-        android:background="@drawable/rounded_corner"
-        android:text="Year:"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/model" />
-
-    <Button
-        android:id="@+id/remove"
-        android:layout_width="wrap_content"
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/black"
-        android:text="Remove"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/gradiant_color"
+        app:tabTextColor="@color/white"
+        app:tabMode="scrollable"
+        app:layout_constraintTop_toBottomOf="@id/title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/year" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tab_layout"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/vp_carinfo"/>
 
-    <Button
-        android:id="@+id/add"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
+        android:id="@+id/fab_add"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/black"
-        android:text="Add"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        android:src="@drawable/ic_action_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vehicle_box" />
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

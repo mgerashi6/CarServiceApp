@@ -33,32 +33,61 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/logo" />
 
-    <EditText
-        android:id="@+id/date"
+    <Button
+        android:id="@+id/dateBTN"
         android:layout_width="312dp"
         android:layout_height="51dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/rounded_corner"
         android:ems="10"
-        android:inputType="date"
-        android:text="     Date"
+        android:textAlignment="center"
+        android:backgroundTint="@color/white"
+        android:text="Date"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
-    <EditText
-        android:id="@+id/time"
+<!--<DatePicker-->
+<!--    android:id="@+id/date"-->
+<!--    android:layout_width="312dp"-->
+<!--    android:layout_height="400dp"-->
+<!--    android:layout_marginTop="30dp"-->
+<!--    android:background="@drawable/rounded_corner"-->
+<!--    android:ems="10"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintHorizontal_bias="0.494"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/title"/>-->
+
+<!--<TimePicker-->
+<!--    android:id="@+id/time"-->
+<!--    android:layout_width="312dp"-->
+<!--    android:layout_height="350dp"-->
+<!--    android:layout_marginTop="38dp"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/date" />-->
+
+    <Button
+        android:id="@+id/timeBTN"
         android:layout_width="312dp"
         android:layout_height="51dp"
         android:layout_marginTop="38dp"
         android:background="@drawable/rounded_corner"
         android:ems="10"
-        android:inputType="time"
-        android:text="     Time"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:textAlignment="center"
+        android:text="Time"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date" />
+        app:layout_constraintTop_toBottomOf="@+id/dateBTN" />
 
     <EditText
         android:id="@+id/car_plate_number"
@@ -72,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/time" />
+        app:layout_constraintTop_toBottomOf="@+id/timeBTN" />
 
     <EditText
         android:id="@+id/reason_for_service"
