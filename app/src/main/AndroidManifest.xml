@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarServiceApp">
         <activity android:name=".admin_login"></activity>
+        <activity android:name=".cs_car_plate_search"></activity>
+        <activity android:name=".cs_car_report_check"></activity>
+        <activity android:name=".cs_car_reports"></activity>
+        <activity android:name=".cs_home_page"></activity>
+        <activity android:name=".MechanicHomePage"></activity>
         <activity android:name=".Today_AppointmentsActivity" />
         <activity android:name=".UpdateCarReportActivity" />
         <activity android:name=".AddCarReportActivity" />
