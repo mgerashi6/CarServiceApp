@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradiant_color"
     tools:context=".customerAllVehicles">
+
+    <Button
+        android:id="@+id/homeVeh"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/black"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/title"
         android:layout_width="300dp"

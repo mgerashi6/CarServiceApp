@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.carserviceapp.adapter.Constants
+import com.example.carserviceapp.fragments.CustomerHomeFragment
 import com.example.carserviceapp.room.CarInfo
 import com.example.carserviceapp.room.CarViewmodel
 import com.example.carserviceapp.room.CarViewmodelFactory
@@ -79,6 +80,11 @@ class customerCarReport : AppCompatActivity() {
             intent.putExtra("carplatenum", carPlate)
             startActivity(intent)
             Constants.track = false
+        }
+
+        homeCar.setOnClickListener{
+            val intent = Intent(this, customerHomePage::class.java)
+            startActivity(intent)
         }
 
     }

@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
+import com.example.carserviceapp.fragments.CustomerCallFragment
 import kotlinx.android.synthetic.main.activity_login_page.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_registration_part_one.*
@@ -22,6 +23,7 @@ class loginPage : AppCompatActivity() {
             val intent = Intent(this, admin_login::class.java)
             startActivity(intent)
         }
+
 
         signin_button.setOnClickListener {
             var emailInput = findViewById<EditText>(R.id.email_input).text.toString()

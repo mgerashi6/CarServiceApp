@@ -1,5 +1,6 @@
 package com.example.carserviceapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -7,6 +8,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.carserviceapp.adapter.CarAppointmentAdapter
 import com.example.carserviceapp.adapter.CarInfoAdapter
+import com.example.carserviceapp.fragments.CustomerHomeFragment
 import com.example.carserviceapp.room.CarInfo
 import com.example.carserviceapp.room.CarViewmodel
 import com.example.carserviceapp.room.CarViewmodelFactory
@@ -42,6 +44,11 @@ class customerAppointmentsBooked : AppCompatActivity() {
             adapter.carAppointmentInfo = filterbycustomerID(customerID,it)
         })
 
+        homeBook.setOnClickListener{
+            val intent = Intent(this, customerHomePage::class.java)
+            startActivity(intent)
+        }
+
     }
     fun filterbycustomerID(customerID : String,appointmentInfolist : List<CarAppointmentInfo>) : List<CarAppointmentInfo>{
         var appointmentlist = mutableListOf<CarAppointmentInfo>()
@@ -52,4 +59,7 @@ class customerAppointmentsBooked : AppCompatActivity() {
         }
         return appointmentlist
     }
+
+
+
 }

@@ -16,5 +16,10 @@ class MechanicHomePage : AppCompatActivity() {
             val intent = Intent(this, UpdateCarReportActivity::class.java)
             startActivity(intent)
         }
+
+        MechLogout.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

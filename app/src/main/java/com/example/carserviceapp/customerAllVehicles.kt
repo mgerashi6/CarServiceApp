@@ -1,5 +1,6 @@
 package com.example.carserviceapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -13,6 +14,7 @@ import com.example.carserviceapp.room.CarViewmodelFactory
 import com.example.carserviceapp.room.dialog.AddCarInfoDialog
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.activity_customer_all_vehicles.*
+import kotlinx.android.synthetic.main.activity_customer_appointments_booked.*
 
 class customerAllVehicles : AppCompatActivity() {
 
@@ -20,8 +22,11 @@ class customerAllVehicles : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_customer_all_vehicles)
-        
 
+        homeVeh.setOnClickListener{
+            val intent = Intent(this, customerHomePage::class.java)
+            startActivity(intent)
+        }
         var carViewmodelFactory = CarViewmodelFactory(application)
         carViewmodel = ViewModelProvider(this,carViewmodelFactory).get(CarViewmodel::class.java)
 

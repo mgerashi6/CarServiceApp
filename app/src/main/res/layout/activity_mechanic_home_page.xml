@@ -43,6 +43,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title" />
+
             <Button
                 android:id="@+id/WorkOnCar"
                 android:layout_width="wrap_content"
@@ -53,6 +54,17 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/mechanic" />
+
+            <Button
+                android:id="@+id/MechLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="216dp"
+                android:backgroundTint="@color/black"
+                android:text="Logout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/WorkOnCar" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

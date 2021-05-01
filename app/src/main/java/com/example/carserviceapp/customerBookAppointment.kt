@@ -9,6 +9,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.example.carserviceapp.fragments.CustomerHomeFragment
 import com.example.carserviceapp.room.CarViewmodel
 import com.example.carserviceapp.room.CarViewmodelFactory
 import com.example.carserviceapp.room.dialog.CarAppointmentInfo
@@ -76,6 +77,19 @@ class customerBookAppointment : AppCompatActivity() {
               Toast.makeText(this,"Please fill all details",Toast.LENGTH_SHORT).show()
           }
       }
+
+
+        homeApp.setOnClickListener{
+            val intent = Intent(this,customerHomePage::class.java)
+            startActivity(intent)
+        }
+
+
+
+
+
+
+
     }
 }
 

@@ -1,5 +1,6 @@
 package com.example.carserviceapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.carserviceapp.adapter.CarServiceDonetvAdapter
 import com.example.carserviceapp.adapter.Constants
+import com.example.carserviceapp.fragments.CustomerHomeFragment
 import com.example.carserviceapp.room.CarViewmodel
 import com.example.carserviceapp.room.CarViewmodelFactory
 import com.example.carserviceapp.room.dialog.CarReportInfo
@@ -18,6 +20,7 @@ import kotlinx.android.synthetic.main.activity_customer_car_report_selected.*
 import kotlinx.android.synthetic.main.activity_customer_car_report_selected.tv_additionalcomments
 import kotlinx.android.synthetic.main.activity_customer_car_report_selected.tv_problems
 import kotlinx.android.synthetic.main.activity_customer_car_report_selected.tv_status
+import kotlinx.android.synthetic.main.activity_customer_track_car.*
 
 class customerCarReportSelected : AppCompatActivity() {
     lateinit var carViewmodel : CarViewmodel
@@ -55,6 +58,12 @@ class customerCarReportSelected : AppCompatActivity() {
                 adapter.spinnerlist = it.servicesdone
                 tv_datedat.text = it.date
             })
+        }
+
+
+        homeReport.setOnClickListener{
+            val intent = Intent(this, customerHomePage::class.java)
+            startActivity(intent)
         }
 
      /*   var helper = DBHelper(applicationContext)

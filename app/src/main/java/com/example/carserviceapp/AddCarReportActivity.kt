@@ -89,7 +89,7 @@ class AddCarReportActivity : AppCompatActivity() {
         }
 
         cd_home.setOnClickListener {
-            startActivity(Intent(Intent(this,customerHomePage::class.java)))
+            startActivity(Intent(Intent(this,MechanicHomePage::class.java)))
         }
 
         cd_save.setOnClickListener {

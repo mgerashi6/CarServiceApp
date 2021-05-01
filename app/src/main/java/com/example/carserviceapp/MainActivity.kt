@@ -14,7 +14,7 @@ import com.example.carserviceapp.fragments.CustomerHomeFragment
 import com.example.carserviceapp.fragments.CustomerProfileFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_customer_home_page.*
-
+import kotlinx.android.synthetic.main.activity_login_page.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -70,6 +70,11 @@ class MainActivity : AppCompatActivity() {
 
         new_customer.setOnClickListener{
             val intent = Intent(this, RegistrationPartOne::class.java)
+            startActivity(intent)
+        }
+
+        contact_us.setOnClickListener {
+            val intent = Intent(this, customerContactUs::class.java)
             startActivity(intent)
         }
 
