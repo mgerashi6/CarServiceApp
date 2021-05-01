@@ -34,7 +34,7 @@ class customerAllVehicles : AppCompatActivity() {
         vp_carinfo.adapter = adapter
 
         TabLayoutMediator(tab_layout,vp_carinfo){tab,position ->
-            tab.text = "Car${position+1}"
+            tab.text = "Car ${position+1}"
         }.attach()
 
         fab_add.setOnClickListener {

@@ -31,7 +31,7 @@ class customerAppointmentsBooked : AppCompatActivity() {
         vp_carappointmentinfo.adapter = adapter
 
         TabLayoutMediator(tab_layout_appointment,vp_carappointmentinfo){tab,position ->
-            tab.text = "Appointment${position+1}"
+            tab.text = "Appointment ${position+1}"
         }.attach()
 
         adapter.setOnItemClickListener {
