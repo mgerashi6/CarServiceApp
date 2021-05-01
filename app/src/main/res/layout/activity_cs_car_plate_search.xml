@@ -19,7 +19,7 @@
         android:layout_marginBottom="192dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/black"
-        android:text="Search ID"
+        android:text="Search Plate Number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
