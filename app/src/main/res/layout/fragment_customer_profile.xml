@@ -33,6 +33,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="First Name"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +48,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Last Name"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,6 +63,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Gender"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,6 +78,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Region"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,6 +93,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="City"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,6 +108,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Mobile Phone"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,6 +123,7 @@
             android:ems="10"
             android:inputType="text"
             android:text="National ID"
+            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
@@ -133,14 +140,15 @@
             app:layout_constraintTop_toBottomOf="@+id/national_ID" />
 
         <EditText
-            android:id="@+id/example"
+            android:id="@+id/profile_password"
             android:layout_width="312dp"
             android:layout_height="51dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/rounded_corner"
             android:ems="10"
             android:inputType="text"
-            android:text="example"
+            android:text="New Password"
+            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
@@ -155,7 +163,7 @@
         android:text="Change Password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/example" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_password" />
 
         <Button
             android:id="@+id/sign_out"
