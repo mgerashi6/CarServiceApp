@@ -29,8 +29,6 @@ class loginPage : AppCompatActivity() {
             var emailInput = findViewById<EditText>(R.id.email_input).text.toString()
             var passGet = findViewById<EditText>(R.id.pass_input).text.toString()
 
-
-
             if(emailInput.isEmpty() || passGet.isEmpty()){
                 Toast.makeText(applicationContext,"Please enter email and password", Toast.LENGTH_SHORT).show()
 

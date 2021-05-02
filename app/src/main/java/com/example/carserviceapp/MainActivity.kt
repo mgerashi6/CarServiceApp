@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         var rs = db.rawQuery("SELECT * FROM ADMIN",null)
 
         if(rs.moveToNext()){
-            Toast.makeText(applicationContext,rs.getString(1),Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext,"Welcome",Toast.LENGTH_LONG).show()
         }
         else{
             Toast.makeText(applicationContext,"",Toast.LENGTH_LONG).show()

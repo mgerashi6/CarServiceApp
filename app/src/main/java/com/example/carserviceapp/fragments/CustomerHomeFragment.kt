@@ -57,6 +57,10 @@ class CustomerHomeFragment : Fragment() {
             startActivity(intent)
         }
 
+        account.setOnClickListener {
+            val intent = Intent(activity, customerProfile::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onCreateView(
